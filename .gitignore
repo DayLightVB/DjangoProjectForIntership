@@ -1,3 +1,7 @@
+local_settings.py
+postgresql_psycopg2
+db.postgresql_psycopg2
+db.postgresql_psycopg2-journal
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -60,6 +64,9 @@ coverage.xml
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
+postgresql_psycopg2
+db.postgresql_psycopg2
+db.postgresql_psycopg2-journal
 
 # Flask stuff:
 instance/
