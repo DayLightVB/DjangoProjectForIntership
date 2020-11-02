@@ -1,0 +1,32 @@
+{% extends 'polls/basic.html' %}
+{% load static %}>
+
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/klo.css' %}">
+{% endblock %}
+
+
+{% block title %}
+KLO
+{% endblock %}
+
+
+{% block content %}
+<nav>
+	<ul class="top-menu">
+		<li><a href="/klo/">KLO</a></li>
+		<li><a href="/offers/">Offers</a></li>
+		<li><a href="/about/">About</a></li>
+	</ul>
+</nav>
+<div>
+<h1>KLO — is a service that will help you buy or sell anything</h1>
+<p>On KLO you will have access to hundreds of offers for buying / selling electronics.<br/>
+    You can buy a new phone, smart watch, laptop at a very pleasant<br/>
+    price or sell your device yourself on favorable terms.</p>
+<form>
+	<button name="button1" value="START">Start using</button>
+</form>
+</div>
+{% endblock %}

@@ -4,12 +4,18 @@ from django.shortcuts import render
 # Create your views here.
 
 
-def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+def main_home(request):
+    return render(request, 'polls/klo.html')
 
 
-def hellomicky(request):
-    return HttpResponse('Hello. i`m Micky')
+def offers(request):
+    return render(request, 'polls/offers.html')
 
-def fine(request):
-    return HttpResponse('I`M FINE')
+
+def about(request):
+    return render(request, 'polls/about.html')
+
+
+
+
+
