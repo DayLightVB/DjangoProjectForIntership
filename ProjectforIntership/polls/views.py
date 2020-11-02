@@ -4,7 +4,7 @@ from django.shortcuts import render
 # Create your views here.
 
 
-def main_home(request):
+def klo(request):
     return render(request, 'polls/klo.html')
 
 
