@@ -1,10 +1,31 @@
-{% extends 'polls/basic.html' %}
-{% load static %}>
+{% load static %}
 
-{% block title %}
-Offers
-{% endblock %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Offers</title>
+    <link rel="stylesheet" href="{% static 'css/offers.css' %}">
+	<link rel="shortcut icon" type="image/png" href="{% static 'faviconKLO.png' %}">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header_inner">
+			<div class="header_logo"><a class="logo" href="/klo/">KLO</a></div>
+			<nav class="nav">
+				<a class= "barlink" href="/offers/">Offers</a>
+				<a class= "barlink" href="/about/">About</a>
+				<button class="bar_button">Sing up</button>
+			</nav>
+			</div>
+		</div>
+	</header>
+</body>
+</html>
 
-{% block content %}
-<h2>Offers that you deserve</h2>
-{% endblock %}
+
