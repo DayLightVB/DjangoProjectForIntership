@@ -1,31 +1,35 @@
-{% extends 'polls/basic.html' %}
-{% load static %}>
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>KLO</title>
+	<link rel="stylesheet" href="{% static 'css/klo.css' %}">
+	<link rel="shortcut icon" type="image/png" href="{% static 'faviconKLO.png' %}">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header_inner">
+			<div class="header_logo"><a class="logo" href="/klo/">KLO</a></div>
+			<nav class="nav">
+				<a class= "barlink" href="/offers/">Offers</a>
+				<a class= "barlink" href="/about/">About</a>
+				<button class="bar_button">Sing up</button>
+			</nav>
+			</div>
+		</div>
+	</header>
+</body>
+</html>
 
 
-{% block head %}
-<title>{% block title %}KLO{% endblock %}</title>
-<link rel="stylesheet" href="{% static 'css/klo.css' %}">
-<link rel="shortcut icon" type="image/png" href="{% static "faviconKLO.png" %}">
-{% endblock %}
 
 
 
 
-{% block content %}
-<nav>
-	<ul class="top-menu">
-		<li><a href="/klo/">KLO</a></li>
-		<li><a href="/offers/">Offers</a></li>
-		<li><a href="/about/">About</a></li>
-	</ul>
-</nav>
-<div>
-<h1>KLO — is a service that will help you buy or sell anything</h1>
-<p>On KLO you will have access to hundreds of offers for buying / selling electronics.<br/>
-    You can buy a new phone, smart watch, laptop at a very pleasant<br/>
-    price or sell your device yourself on favorable terms.</p>
-<form>
-	<button name="button1" value="START">Start using</button>
-</form>
-</div>
-{% endblock %}
