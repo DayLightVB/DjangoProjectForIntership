@@ -15,6 +15,9 @@ def offers(request):
 def about(request):
     return render(request, 'polls/about.html')
 
+def signup(request):
+    return render(request, 'polls/signup.html')
+
 
 
 

@@ -21,22 +21,28 @@ header {
     color: #fff;
     font-size: 52px;
     text-decoration: none;
+    transition: color .4s linear;
+}
+
+.logo:hover{
+    color: #A701FF;
 }
 
 .nav{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 50px;
     font-family: Roboto;
     font-size: 36px;
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .barlink{
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 25px;
-
+    margin: 0 30px;
     color: #fff;
     text-decoration: none;
 
@@ -55,6 +61,7 @@ header {
 }
 
 .bar_button{
+    margin: 0px 0px 0px 30px;
     width: 193px;
     height: 70px;
     background-color: black;
