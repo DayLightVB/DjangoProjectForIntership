@@ -14,6 +14,11 @@ header {
     left: 55px;
     right: 0;
     z-index: 1000;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
 
     top: 20px;
     font-family: Roboto;
@@ -21,7 +26,7 @@ header {
     color: #fff;
     font-size: 52px;
     text-decoration: none;
-    transition: color .4s linear;
+    transition: color .3s linear;
 }
 
 .logo:hover{
@@ -38,6 +43,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
 
 }
 
@@ -46,7 +56,7 @@ header {
     color: #fff;
     text-decoration: none;
 
-    transition: color .4s linear;
+    transition: color .3s linear;
 }
 
 .barlink:hover{
@@ -64,38 +74,75 @@ header {
     margin: 0px 0px 0px 30px;
     width: 193px;
     height: 70px;
-    background-color: black;
-    border: 3px solid #A701FF;
+    background-color: #A701FF;
     font-family: Roboto;
     font-size: 36px;
     text-transform: uppercase;
     color: white;
-    alignt-items: center;
+    align-items: center;
 
 
     border-radius: 12px;
-    transition: color .4s linear;
+    transition: color .3s linear;
+    background: white;
+    background: linear-gradient(90.83deg, #A701FF 0%, #554DFF 100%);
+    border: 0px solid transparent;
+    cursor: pointer;
 }
 
 .bar_button:hover{
-    color: #A701FF;
+    color: black;
+    background: linear-gradient(90.83deg, #FF7B01 0%, #FF4D4D 100%);
 }
 
-.search_input{
+
+
+.search_form{
     position: absolute;
     width: 1037px;
     height: 69px;
     left: 441px;
-    top: 125px;
+    top: 150px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px rgba(32,33,36,.5);
+}
+
+.search_input{
+    position: absolute;
+    width: 700px;
+    height: 65px;
+    left: 20px;
+    top: 1px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 28px;
-
-    border: 3px solid #000000;
-    box-sizing: border-box;
-    border-radius: 12px;
+    transition: color .3s linear;
+    background-color: transparent;
+    border: 1px solid transparent;
 }
+
+.search_input:hover{
+     color: #A701FF;
+}
+
+.search_button{
+    position: relative;
+    left: 965px;
+    top: 2px;
+    width: 60px;
+    height: 60px;
+    background: url('../img/Group 1(1).png') no-repeat center;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+
+
 
 
