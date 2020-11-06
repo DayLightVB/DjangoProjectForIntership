@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
+
 # Create your views here.
 
 
@@ -14,6 +15,7 @@ def offers(request):
 
 def about(request):
     return render(request, 'polls/about.html')
+
 
 def signup(request):
     return render(request, 'polls/signup.html')
