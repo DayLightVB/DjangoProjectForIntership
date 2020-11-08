@@ -1,3 +1,56 @@
 from django.db import models
 
-# Create your models here.
+from user.models import User
+
+
+class Ad(models.Model):
+
+    CONDITION_CHOICES = [
+        ('used', 'Used'),
+        ('new', 'New'),
+    ]
+
+    COLOR_CHOICES = [
+        ('white', 'White'),
+        ('yellow', 'Yellow'),
+        ('green', 'Green'),
+        ('gold', 'Gold'),
+        ('red', 'Red'),
+        ('silver', 'Silver'),
+        ('pink', 'Pink'),
+        ('gray', 'Gray'),
+        ('blue', 'Blue'),
+        ('purple', 'Purple'),
+        ('black', 'Black'),
+        ('other', 'Other'),
+
+    ]
+
+    PRODUCT_CHOICES = [
+        ('phone', 'Phone'),
+        ('laptop', 'Laptop'),
+        ('tablet', 'Tablet'),
+        ('headphones', 'Headphones'),
+        ('monitor', 'Monitor'),
+        ('component', 'Component'),
+        ('ga', 'Gaming Accessories'),
+    ]
+
+    product_type = models.CharField(max_length=100, verbose_name='Type', choices=PRODUCT_CHOICES)
+    model = models.CharField(max_length=200, verbose_name='Model')
+    name = models.CharField(max_length=250, verbose_name='Name')
+    color = models.CharField(max_length=100, verbose_name='Color', choices=COLOR_CHOICES)
+    condition = models.CharField(max_length=100, verbose_name='Condition', choices=CONDITION_CHOICES)
+    description = models.TextField(max_length=10000, verbose_name='Description')
+    price = models.IntegerField(default=0, verbose_name='Price')
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    date = models.DateTimeField(auto_now_add=True)
+    place = models.CharField(max_length=155, verbose_name='Place')
+
+    def __str__(self):
+        return self.name
+
+
+class AdPhoto(models.Model):
+    url = models.ImageField(max_length=255, verbose_name='URL')
+    product_id = models.ForeignKey(Ad, on_delete=models.CASCADE)

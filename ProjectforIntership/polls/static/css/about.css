@@ -7,6 +7,7 @@ header {
     top: 0px;
 }
 
+/* LOGO */
 .logo {
     position: absolute;
     width: 90px;
@@ -33,6 +34,7 @@ header {
     color: #A701FF;
 }
 
+/* NAVBAR */
 .nav{
     display: inline-block;
     vertical-align: top;
@@ -70,6 +72,7 @@ header {
     align-items: center;
 }
 
+/* BUTTON */
 .bar_button{
     margin: 0px 0px 0px 30px;
     width: 193px;

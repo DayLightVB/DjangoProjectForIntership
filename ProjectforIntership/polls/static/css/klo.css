@@ -7,6 +7,7 @@ header {
     top: 0px;
 }
 
+/* LOGO */
 .logo {
     position: absolute;
     width: 90px;
@@ -33,6 +34,7 @@ header {
     color: #A701FF;
 }
 
+/* NAVBAR */
 .nav{
     display: inline-block;
     vertical-align: top;
@@ -70,6 +72,7 @@ header {
     align-items: center;
 }
 
+/* BAR BUTTON */
 .bar_button{
     margin: 0px 0px 0px 30px;
     width: 193px;
@@ -96,7 +99,7 @@ header {
 }
 
 
-
+/* SEARCH FORM */
 .search_form{
     position: absolute;
     width: 1037px;
@@ -142,10 +145,11 @@ header {
     border: 1px solid transparent;
 }
 
+/* CATEGORIES */
 .categories{
     display: inline-block;
     position: absolute;
-    width: 1597px;
+    width: 1730px;
     height: 45px;
     left: 75px;
     top: 270px;
@@ -155,6 +159,7 @@ header {
     justify-content: space-between;
     align-items: center;
     white-space: nowrap;
+    align-items: center;
 
     font-family: Roboto;
     font-style: normal;
@@ -169,7 +174,6 @@ header {
     -khtml-user-select: none;
     -webkit-user-select: none;
     -o-user-select: none;
-    align-items: center;
     vertical-align: top;
     margin: 0 30px;
     text-decoration: none;
