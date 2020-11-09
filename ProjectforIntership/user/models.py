@@ -8,4 +8,4 @@ class User(models.Model):
     email = models.EmailField(max_length=255, verbose_name='Email')
 
     def __str__(self):
-        return self.name
+        return '%s %s' % (self.name, self.surname)
