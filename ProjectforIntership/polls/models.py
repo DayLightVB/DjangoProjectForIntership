@@ -48,9 +48,12 @@ class Ad(models.Model):
     place = models.CharField(max_length=155, verbose_name='Place')
 
     def __str__(self):
-        return self.name
+        return '%s, %s, %s' % (self.name, self.model, self.color)
 
 
 class AdPhoto(models.Model):
     url = models.ImageField(max_length=255, verbose_name='URL')
     product_id = models.ForeignKey(Ad, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return 'Its photo for %s' % (self.product_id)
