@@ -1,6 +1,6 @@
 from django.db import models
 
-from user.models import User
+#from user.models import User
 
 
 class Ad(models.Model):
@@ -43,7 +43,7 @@ class Ad(models.Model):
     condition = models.CharField(max_length=100, verbose_name='Condition', choices=CONDITION_CHOICES)
     description = models.TextField(max_length=10000, verbose_name='Description')
     price = models.IntegerField(default=0, verbose_name='Price')
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    #user = models.ForeignKey(user, on_delete=models.CASCADE)
     date = models.DateTimeField(auto_now_add=True)
     place = models.CharField(max_length=155, verbose_name='Place')
 

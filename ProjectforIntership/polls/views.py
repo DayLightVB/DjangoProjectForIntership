@@ -21,9 +21,6 @@ def signup(request):
     return render(request, 'polls/signup.html')
 
 
-def signin(request):
-    return render(request, 'polls/signin.html')
-
 
 
 
