@@ -7,6 +7,14 @@ header {
     top: 0px;
 }
 
+.container{
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
 /* LOGO */
 .logo {
     position: absolute;
@@ -15,11 +23,6 @@ header {
     left: 55px;
     right: 0;
     z-index: 1000;
-    user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
 
     top: 20px;
     font-family: Roboto;
@@ -47,11 +50,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
 
 }
 
@@ -85,11 +83,6 @@ header {
 
     transition: color .3s linear;
     cursor: pointer;
-    user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
     text-decoration: none;
 }
 
@@ -185,7 +178,6 @@ header {
     justify-content: space-between;
     align-items: center;
     white-space: nowrap;
-    align-items: center;
 
     font-family: Roboto;
     font-style: normal;
@@ -196,10 +188,6 @@ header {
 
 .cat_nav{
     user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
     vertical-align: top;
     margin: 0 30px;
     text-decoration: none;
@@ -210,3 +198,4 @@ header {
 .cat_nav:hover{
     color: #A701FF;
 }
+

@@ -7,6 +7,14 @@ header {
     top: 0px;
 }
 
+.container{
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
 /* LOGO */
 .logo {
     position: absolute;
@@ -15,11 +23,6 @@ header {
     left: 55px;
     right: 0;
     z-index: 1000;
-    user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
 
     top: 20px;
     font-family: Roboto;
@@ -47,11 +50,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
 
 }
 
@@ -85,11 +83,6 @@ header {
 
     transition: color .3s linear;
     cursor: pointer;
-    user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
     text-decoration: none;
 }
 
@@ -123,90 +116,4 @@ header {
 .bar_button:hover{
     color: #FF7B01;
     border-color: #FF7B01;
-}
-
-
-/* SEARCH FORM */
-.search_form{
-    position: absolute;
-    width: 1037px;
-    height: 69px;
-    left: 441px;
-    top: 150px;
-    background-color: transparent;
-    border: 1px solid transparent;
-    box-sizing: border-box;
-    border-radius: 12px;
-    box-shadow: 0 1px 6px rgba(32,33,36,.5);
-}
-
-.search_input{
-    position: absolute;
-    width: 700px;
-    height: 65px;
-    left: 20px;
-    top: 1px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    transition: color .3s linear;
-    background-color: transparent;
-    border: 1px solid transparent;
-}
-
-.search_input:hover{
-     color: #A701FF;
-}
-
-.search_button{
-    position: relative;
-    left: 965px;
-    top: 2px;
-    width: 60px;
-    height: 60px;
-    background: url('../img/Group 1(1).png') no-repeat center;
-    cursor: pointer;
-    background-color: transparent;
-    border: 1px solid transparent;
-}
-
-/* CATEGORIES */
-.categories{
-    display: inline-block;
-    position: absolute;
-    width: 1730px;
-    height: 45px;
-    left: 75px;
-    top: 270px;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    white-space: nowrap;
-    align-items: center;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 42px;
-}
-
-.cat_nav{
-    user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
-    vertical-align: top;
-    margin: 0 30px;
-    text-decoration: none;
-    color: black;
-    transition: color .3s linear;
-}
-
-.cat_nav:hover{
-    color: #A701FF;
 }
