@@ -18,14 +18,11 @@
     border: 1px solid transparent;
     box-sizing: border-box;
     border-radius: 12px;
-    box-shadow: 0 1px 6px rgba(32,33,36,.5);
-    transition: background-color .3s linear, color .3s linear;
+    transition: background-color .3s linear, box-shadow .3s linear;
 }
 
 .primaryAction:hover{
-    background-color: #FF7B01;
-    color: black;
-
+    background-color: #9400d3;
 }
 
 h1{
@@ -104,14 +101,14 @@ input{
     -webkit-animation-fill-mode: both;
     background: transparent;
     border-radius: 12px;
-    border: 2px solid transparent;
+    border: 2px solid #e1e4e8;
+
     border-color: #e1e4e8;
     cursor: pointer;
-    transition: border-color .3s linear, color .3s linear;
+    transition: color .3s linear;
+
 }
 
-input:hover{
-    border-color: black;
-}
+
 
 
