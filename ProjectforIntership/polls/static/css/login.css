@@ -6,7 +6,7 @@
 
 .primaryAction{
     position: absolute;
-    top: 305px;
+    top: 240px;
     left: 105px;
     border-radius: 12px;
     width: 200px;
@@ -40,7 +40,7 @@ h1{
 
 .secondaryAction{
     position: absolute;
-    top: 370px;
+    top: 310px;
     right: 15;
     bottom: 15;
     left: 132px;
@@ -56,17 +56,18 @@ h1{
     left: 740px;
 
 
+
     border-radius: 12px;
     background-color: #f6f8fa;
     border: 1px solid #eaecef;
     width: 400px;
-    height: 400px;
+    height: 350px;
     text-align: center;
 }
 
 .lower{
     position: absolute;
-    top: 415px;
+    top: 360px;
     right: 15;
     bottom: 15;
     left: 0px;
@@ -80,18 +81,19 @@ h1{
 
 .NewtoKLO{
     position: absolute;
-    top: 416px;
+    top: 361px;
     right: 15;
     bottom: 15;
     left: 75px;
     z-index: 1;
 }
 
-.login{
 
-}
 
 input{
+    position: relative;
+    top: -10px;
+    left: 50px;
     font-size: 16px;
     box-sizing: border-box;
     padding-left: 15px;
@@ -104,10 +106,21 @@ input{
     border: 2px solid #e1e4e8;
 
     border-color: #e1e4e8;
-    cursor: pointer;
     transition: color .3s linear;
 
 }
+
+label{
+    position: absolute;
+    left: 20px;
+}
+
+#id_remember {
+    position: absolute;
+    top: 190px;
+    left: 145px;
+}
+
 
 
 
