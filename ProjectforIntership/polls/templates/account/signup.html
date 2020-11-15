@@ -1,9 +1,13 @@
 {% extends "account/base.html" %}
-
+{% load static %}
 {% load i18n %}
-
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+	<link rel="shortcut icon" type="image/png" href="{% static 'faviconKLO.png' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+{% endblock %}
 {% block head_title %}{% trans "Signup" %}{% endblock %}
-
+{% block div %}{% endblock %}
 {% block content %}
 <h1>{% trans "Sign Up" %}</h1>
 

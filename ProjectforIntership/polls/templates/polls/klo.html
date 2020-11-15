@@ -1,5 +1,4 @@
 {% load static %}
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -21,7 +20,9 @@
 				<a class= "barlink" href="/offers/">Offers</a>
 				<a class= "barlink" href="/about/">About</a>
 				<a class= "signin" href="/accounts/login/">Sign in</a>
-				<button onclick="document.location=/signup/" class="bar_button">Sign up</button>
+				<form action="/accounts/signup">
+				<button class="bar_button">Sign up</button>
+				</form>
 			</nav>
 			</div>
 		</div>

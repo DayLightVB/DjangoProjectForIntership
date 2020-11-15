@@ -1,0 +1,21 @@
+.main{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+h1{
+    position: absolute;
+    top: 155px;
+    left: 740px;
+    color: #A701FF;
+}
+
+p{
+    position: absolute;
+    top: 215px;
+    left: 560px;
+    text-align: center;
+    line-height: 1.5;
+}
