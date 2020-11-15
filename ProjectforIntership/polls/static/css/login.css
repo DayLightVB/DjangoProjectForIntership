@@ -6,7 +6,7 @@
 
 .primaryAction{
     position: absolute;
-    top: 240px;
+    top: 245px;
     left: 105px;
     border-radius: 12px;
     width: 200px;
@@ -26,6 +26,8 @@
 }
 
 h1{
+    position: relative;
+    top: -5px;
     font-size: 36px;
     font-family: Roboto;
     font-style: normal;
@@ -40,7 +42,7 @@ h1{
 
 .secondaryAction{
     position: absolute;
-    top: 310px;
+    top: 315px;
     right: 15;
     bottom: 15;
     left: 132px;
@@ -121,6 +123,12 @@ label{
     left: 145px;
 }
 
+.errorlist.nonfield{
+    position: absolute;
+    top: -75px;
+    right: 40px;
+    color: red;
+}
 
 
 
