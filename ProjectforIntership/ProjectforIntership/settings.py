@@ -13,7 +13,7 @@ import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-from .local_settings import KEY, USER, PASSWORD
+from .local_settings import KEY
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -88,14 +88,11 @@ WSGI_APPLICATION = 'ProjectforIntership.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'projectforintership',
-        'USER': USER,
-        'PASSWORD': PASSWORD,
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
-    }
-}
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
+      }
+   }
+
 
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
@@ -135,7 +132,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-LOGIN_REDIRECT_URL = '/klo/'
+LOGIN_REDIRECT_URL = 'klo'
 
 
 # Static files (static, JavaScript, Images)
@@ -143,12 +140,16 @@ LOGIN_REDIRECT_URL = '/klo/'
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+
 SITE_ID = 1
 
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = True
-ACCOUNT_EMAIL_CONFIRMATION_ANONYMOUS_REDIRECT_URL = '/klo/'
-ACCOUNT_LOGOUT_REDIRECT_URL = '/klo/'
-ACCOUNT_SIGNUP_REDIRECT_URL = '/klo/'
+ACCOUNT_EMAIL_CONFIRMATION_ANONYMOUS_REDIRECT_URL = 'klo'
+ACCOUNT_LOGOUT_REDIRECT_URL = 'klo'
+ACCOUNT_SIGNUP_REDIRECT_URL = 'klo'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
