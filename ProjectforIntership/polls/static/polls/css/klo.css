@@ -1,0 +1,151 @@
+body {
+    background: #333335;
+}
+
+aside {
+    float: left;
+    background: #1c1c1c;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #858585;
+    position: fixed;
+}
+
+.logo_home{
+    font-size: 50px;
+    font-family: roboto;
+    width: 80px;
+    float: left;
+    color: #fff;
+    transition: color .6s ease;
+    text-decoration:none;
+    -webkit-user-select: none;
+}
+
+.logo_home:hover{
+    color: #A701FF;
+    text-decoration:none;
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size: 28px;
+    -webkit-user-select: none;
+}
+
+aside ul {list-style: none}
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: color .6s ease;
+    -webkit-user-select: none;
+}
+
+aside ul li:hover, aside ul a:hover {
+    text-decoration: none;
+    color: #A701FF;
+}
+
+a {
+    text-decoration: none;
+}
+
+main .features {
+    float: left;
+    color: #fff;
+    margin-top: 25px;
+    margin-left: 20%;
+    text-align: center;
+    width: 75%;
+}
+
+main .features h1 {font-size: 50px; -webkit-user-select: none;}
+main .features p {max-width: 350px; max-height: 150px; margin: 5px auto; overflow: hidden;}
+
+.alert-dark {
+    clear: both;
+    width: 350px;
+    height: 400px;
+    text-align: left;
+    word-wrap: break-word;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+main .features .detail_description{
+    max-width: 800px;
+    max-height: 360px;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+main .features .detail{
+    max-width: 800px;
+    text-align: left;
+}
+
+main .features .home_title{
+    margin: 20px auto;
+    max-width: 450px;
+    word-wrap: break-word;
+}
+
+.alert-dark h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+form {
+    margin-left: 25%;
+    width: 500px;
+    margin-top: 50px;
+    background-color: #1c1c1c;
+    border-radius: .25rem;
+    padding: 15px;
+}
+
+.btn-light {
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+.btn-light:hover {
+    background-color: #A701FF;
+    color: #fff;
+}
+
+.btn-success {
+    font-weight: bold;
+    border: none;
+}
+
+.btn-danger {
+    font-weight: bold;
+    border: none;
+}
+
+.form-control {
+    background-color: #1c1c1c;
+    color: gray;
+    border-color: gray;
+    margin-bottom: -10px;
+}
+
+.form-control:focus  {
+    background-color: #1c1c1c;
+    color: #fff;
+    border-color: white;
+}
+
+.form-control:hover{
+    border-color: white;
+}
+
+.form-control::-webkit-input-placeholder{
+    color: gray;
+}
