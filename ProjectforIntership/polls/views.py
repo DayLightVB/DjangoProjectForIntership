@@ -39,7 +39,7 @@ def about(request):
 def create(request):
     error = ''
     if request.method == 'POST':
-        form = AdForm(request.POST, request.FILES)
+        form = AdForm(request.POST)
         if form.is_valid():
             form.save()
             return redirect('offers')
