@@ -1,5 +1,5 @@
 from .models import Ad
-from django.forms import ModelForm, TextInput, Textarea, NumberInput, FileInput
+from django.forms import ModelForm, TextInput, Textarea, NumberInput
 
 
 class AdForm(ModelForm):
@@ -12,8 +12,7 @@ class AdForm(ModelForm):
                   'condition',
                   'price',
                   'place',
-                  'description',
-                  'photo']
+                  'description']
 
         widgets = {
             'product_type': TextInput(attrs={
@@ -47,8 +46,5 @@ class AdForm(ModelForm):
             'description': Textarea(attrs={
                 'class': 'form-control',
                 'placeholder': 'Description'
-            }),
-            'photo': FileInput(attrs={
-                'class': 'form-control',
             }),
         }

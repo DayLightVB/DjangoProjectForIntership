@@ -7,16 +7,14 @@
     {% if ad %}
     {% for i in ad %}
     <div class="alert alert-dark">
-        <div class="image_offer">
-        <a href="{% url 'ad-detail' i.id %}"><img src="{{ MEDIA_ROOT }}/{{ i.photo }}" alt="Photo"></a>
-        </div>
-        <a href="{% url 'ad-detail' i.id %}"><h3>{{ i.name }} {{ i.model }}<br> {{ i.color }}</h3></a>
-        <p>Date: {{ i.date }}<br> Place: {{ i.place }}<br> Condition: {{ i.condition }}<br></p>
-        <p class="price_offer">{{ i.price }}$</p>
+        <h3>{{ i.name }} {{ i.model }} {{ i.color }}</h3>
+        <p>Date: {{ i.date }}</p>
+        <p>Place: {{ i.place }}<br> Condition: {{ i.condition }}<br> Price: {{ i.price }}$</p>
+        <a href="{% url 'ad-detail' i.id %}" class="btn btn-light">Go Offer</a>
     </div>
     {% endfor %}
     {% else %}
-    <p class="nothing_massage">Unfortunately, there are no new proposals, but after a while, they will certainly appear :)</p>
+    <p>Unfortunately, there are no new proposals, but after a while, they will certainly appear :)</p>
     {% endif %}
 </div>
 {% endblock %}

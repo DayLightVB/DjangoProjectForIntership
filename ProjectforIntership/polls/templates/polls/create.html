@@ -4,7 +4,7 @@
 {% block content %}
 <div class="features">
     <h1>Add offer</h1>
-    <form method="post" enctype="multipart/form-data">
+    <form method="post">
         {% csrf_token %}
         {{ form.product_type }}<br>
         {{ form.name }}<br>
@@ -14,7 +14,6 @@
         {{ form.price }}<br>
         {{ form.place }}<br>
         {{ form.description }}<br>
-        {{ form.photo }}<br>
         <span>{{ error }}</span>
         <button class="btn btn-success" type="submit"> Complete</button>
     </form>
