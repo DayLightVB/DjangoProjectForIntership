@@ -4,14 +4,19 @@
 {% block content %}
 <div class="features">
     <h1>{{ detail_ad.name }} {{ detail_ad.model }} {{ detail_ad.color }}</h1>
-    <p>Date of last edit: {{ detail_ad.date }}</p>
-    <p class="detail">Name: {{ detail_ad.name }}<br>
-        Model: {{ detail_ad.model }}<br>
-        Color: {{ detail_ad.color }}<br>
-        Place: {{ detail_ad.place }}<br>
-        Condition: {{ detail_ad.condition }}<br>
-        Price: {{ detail_ad.price }}$</p>
-    <p class="detail_description">{{ detail_ad.description }}</p>
+    <div class="text_detail">
+    <p><span>Date of last edit:</span> {{ detail_ad.date }}</p>
+    <p class="detail"><span>Name:</span> {{ detail_ad.name }}<br>
+        <span>Model:</span> {{ detail_ad.model }}<br>
+        <span>Color:</span> {{ detail_ad.color }}<br>
+        <span>Place:</span> {{ detail_ad.place }}<br>
+        <span>Condition:</span> {{ detail_ad.condition }}<br>
+        <span>Price:</span> {{ detail_ad.price }}$</p>
+    <p class="detail_description"><span>Description:</span> {{ detail_ad.description }}</p>
+    <div class="image_detail">
+    <img src="{{ detail_ad.photo }}" alt="Photo">
+    </div>
+    </div>
     <a href="{% url 'ad-delete' detail_ad.id %}" class="btn btn-danger">Delete</a>
     <a href="{% url 'ad-update' detail_ad.id %}" class="btn btn-light">Edit</a>
 </div>
