@@ -153,3 +153,4 @@ ACCOUNT_LOGOUT_REDIRECT_URL = 'klo'
 ACCOUNT_SIGNUP_REDIRECT_URL = 'klo'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+MEDIA_URL = '/img/'
