@@ -1,7 +1,5 @@
 from django.contrib import admin
-from .models import Ad, AdPhoto
+from .models import Ad
 
 
 admin.site.register(Ad)
-admin.site.register(AdPhoto)
-# Register your models here.
