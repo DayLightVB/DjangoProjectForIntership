@@ -58,21 +58,34 @@ main .features {
     color: #fff;
     margin-top: 25px;
     margin-left: 20%;
+    margin-bottom: 10px;
     text-align: center;
     width: 75%;
 }
 
 main .features h1 {font-size: 50px; -webkit-user-select: none;}
-main .features p {max-width: 350px; max-height: 150px; margin: 5px auto; overflow: hidden;}
+main .features p {max-width: 350px; max-height: 150px; margin: 5px auto; overflow: hidden; color: #221F1F;}
 
 .alert-dark {
     clear: both;
     width: 350px;
-    height: 400px;
+    height: 412px;
     text-align: left;
     word-wrap: break-word;
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 300px;
+    background: #fff;
+    color: #1c1c1c;
+    border: 1px;
+    border-color: gray;
+    padding-top: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.alert-dark:hover{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 main .features .detail_description{
@@ -96,13 +109,21 @@ main .features .home_title{
 .alert-dark h3 {
     text-align: center;
     font-size: 18px;
+    margin-top: 8px;
     font-weight: bold;
+    transition: color 0.6s ease;
+    color: #1c1c1c;
+    overflow: hidden;
+}
+
+.alert-dark h3:hover {
+    color: #A701FF;
 }
 
 form {
     margin-left: 25%;
     width: 500px;
-    margin-top: 50px;
+    margin-top: 20px;
     background-color: #1c1c1c;
     border-radius: .25rem;
     padding: 15px;
@@ -112,6 +133,7 @@ form {
     font-weight: bold;
     border: none;
     transition: background-color 0.6s ease, color 0.6s ease;
+    margin: 5px auto;
 }
 
 .btn-light:hover {
@@ -148,4 +170,73 @@ form {
 
 .form-control::-webkit-input-placeholder{
     color: gray;
+}
+
+.form-control-file{
+    background-color: #1c1c1c;
+    color: gray;
+    border-color: gray;
+    margin-bottom: -10px;
+}
+
+.image_offer img{
+    display: block;
+    max-height: 200px;
+    max-width: 300px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: .25rem;
+}
+
+.alert-dark .price_offer {
+    color: #333;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 20px;
+    vertical-align: bottom;
+}
+
+.form_delete{
+    background: none;
+    margin-top: 10px;
+    padding: 0px;
+}
+
+.form_delete .btn-success{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #dc3545;
+    width: 150px;
+}
+
+main .features .text_detail p{
+    color: #fff;
+}
+
+span{
+    font-weight: bold;
+}
+
+.image_detail {
+    margin: 10px;
+}
+
+.image_detail img{
+    max-width: 650px;
+    max-height: 400px;
+    border-radius: .25rem;
+}
+
+main .features .home_title {
+    color: #fff;
+}
+
+main .features .nothing_massage {
+    color: #fff;
 }
