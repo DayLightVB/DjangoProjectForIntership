@@ -6,6 +6,7 @@ urlpatterns = [
     path('offers/', views.offers, name='offers'),
     path('about/', views.about, name='about'),
     path('create/', views.create, name='create'),
+    path('logout/', views.logout, name='logout'),
     path('<int:pk>', views.AdDetailView.as_view(), name='ad-detail'),
     path('<int:pk>/update', views.AdUpdateView.as_view(), name='ad-update'),
     path('<int:pk>/delete', views.AdDeleteView.as_view(), name='ad-delete')

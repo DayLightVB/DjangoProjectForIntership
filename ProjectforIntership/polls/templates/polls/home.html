@@ -3,12 +3,10 @@
 {% block title %}KLO{% endblock %}
 {% block content %}
 <div class="features">
-    <h1>KLO</h1>
-    <p class="home_title">Lorem ipsfdfgddgum dolor sit amet, consectetur adipisicing elit. Asperiores at dolorem laborum
-        nam sit temporibus voluptatibus. Ad animi, aut consequuntur dolores eligendi eveniet expedita iusto
-        necessitatibus nostrum quia repudiandae, vero.</p>
-    <a href="offers">
-        <button class="btn btn-light">Go to offers</button>
-    </a>
+    <div class="home_background">
+        <h1 id="home_t">KLO</h1>
+        <p class="home_title_main">KLO — it is a platform where you can put your products up for sale and run your business on our promising platform, or buy something at the best price and in a place suitable for you.</p>
+    <a href="{% url 'offers' %}" class="btn btn-light">Go Offers</a>
+    </div>
 </div>
 {% endblock %}

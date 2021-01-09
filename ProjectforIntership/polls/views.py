@@ -36,6 +36,18 @@ def about(request):
     return render(request, 'polls/aboutklo.html')
 
 
+def logout(request):
+    return render(request, 'account/logout.html')
+
+
+def login(request):
+    return render(request, 'templates/polls/login.html')
+
+
+def signup(request):
+    return render(request, 'templates/polls/signup.html')
+
+
 def create(request):
     error = ''
     if request.method == 'POST':
