@@ -1,20 +1,13 @@
-{% extends "account/base.html" %}
-{% load static %}
+{% extends 'polls/template.html' %}
+
 {% load i18n %}
 
-{% block extra_head %}
-    <link rel="stylesheet" href="{% static 'polls/css/verification_sent.css' %}">
-	<link rel="shortcut icon" type="image/png" href="{% static 'polls/img/faviconKLO.png' %}">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-{% endblock %}
-
 {% block head_title %}{% trans "Verify Your E-mail Address" %}{% endblock %}
-{% block div %}{% endblock %}
+
 {% block content %}
-    <div class="main">
+<div class="features">
     <h1>{% trans "Verify Your E-mail Address" %}</h1>
 
-    <p>{% blocktrans %}We have sent an e-mail to you for verification. Follow the link provided to finalize the signup process.<br>
-        Please contact us if you do not receive it within a few minutes.{% endblocktrans %}</p>
-    </div>
+    <p class="home_title">{% blocktrans %}We have sent an e-mail to you for verification. Follow the link provided to finalize the signup process. Please contact us if you do not receive it within a few minutes.{% endblocktrans %}</p>
+</div>
 {% endblock %}

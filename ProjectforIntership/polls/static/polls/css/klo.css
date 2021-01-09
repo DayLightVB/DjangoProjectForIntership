@@ -2,6 +2,7 @@ body {
     background: #333335;
 }
 
+/* Side panel */
 aside {
     float: left;
     background: #1c1c1c;
@@ -13,9 +14,10 @@ aside {
     position: fixed;
 }
 
+/* Home Logo */
 .logo_home{
     font-size: 50px;
-    font-family: roboto;
+    font-family: 'Yellowtail', cursive;
     width: 80px;
     float: left;
     color: #fff;
@@ -29,12 +31,14 @@ aside {
     text-decoration:none;
 }
 
+/* Side panel h3 */
 aside h3 {
     margin-top: 50px;
     font-size: 28px;
     -webkit-user-select: none;
 }
 
+/* Side panel information */
 aside ul {list-style: none}
 aside ul li {
     color: #fff;
@@ -48,7 +52,7 @@ aside ul li:hover, aside ul a:hover {
     text-decoration: none;
     color: #A701FF;
 }
-
+/* a */
 a {
     text-decoration: none;
 }
@@ -139,6 +143,7 @@ form {
 .btn-light:hover {
     background-color: #A701FF;
     color: #fff;
+    border: none;
 }
 
 .btn-success {
@@ -238,5 +243,395 @@ main .features .home_title {
 }
 
 main .features .nothing_massage {
+    color: #fff;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #fff;
+  color: #1c1c1c;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: .25rem;
+  width: 140px;
+  transition: background-color 0.6s ease, color 0.6s ease;
+  margin-top: 5px;
+}
+
+.dropbtn:focus{
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  border-radius: .25rem;
+  transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #fff;  border-radius: .25rem;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block; border-radius: .25rem;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #A701FF; color: white; border-radius: .25rem;}
+
+/* forgot password */
+main .features .login .secondaryAction{
+    color: white;
+    text-decoration: none;
+    transition: color 0.6s ease;
+}
+
+main .features .login .secondaryAction:hover{
+    color: #A701FF;
+}
+
+main .features .home_title .secondaryAction{
+    color: #A701FF;
+    text-decoration: none;
+    transition: color 0.6s ease;
+}
+
+main .features .home_title .secondaryAction:hover{
+    color: #A701FF;
+}
+
+main .features .login p{
+    color: white;
+}
+
+main .features .login{
+    margin-left: 25%;
+    width: 500px;
+    margin-top: 20px;
+    background-color: #1c1c1c;
+    border-radius: .25rem;
+    padding: 15px;
+}
+
+main .features .login label{
+    position:relative;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+main .features .login p{
+    text-align: left;
+    overflow: visible;
+}
+
+/* input login */
+main .features .login input{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    background-color: #1c1c1c;
+    color: gray;
+    border-color: gray;
+}
+
+main .features .login input:focus  {
+    background-color: #1c1c1c;
+    color: #fff;
+    border-color: white;
+}
+
+main .features .login input:hover{
+    border-color: white;
+}
+
+main .features .login input::-webkit-input-placeholder{
+    color: gray;
+}
+
+/* remember box */
+main .features .login input#id_remember{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 5px;
+    transition: background .15s ease-in-out;
+    float: right;
+    margin-right: 225px;
+    margin-top: 8px;
+}
+
+main .features .login input#id_remember:checked{
+    background: #fff;
+}
+
+main .features .login label#id_remember{
+    float: right
+}
+
+/* reset_password */
+main .features .password_reset p{
+    color: white;
+    text-align: left;
+    overflow: visible;
+}
+
+main .features .password_reset input#id_email{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    background-color: #1c1c1c;
+    color: gray;
+    border-color: gray;
+}
+
+main .features .password_reset input#id_email:focus  {
+    background-color: #1c1c1c;
+    color: #fff;
+    border-color: white;
+}
+
+main .features .password_reset input#id_email:hover{
+    border-color: white;
+}
+
+main .features .password_reset input#id_email::-webkit-input-placeholder{
+    color: gray;
+}
+
+main .features .password_reset label{
+    position:relative;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* password reset key */
+main .features input#id_password1, input#id_password2{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    background-color: #1c1c1c;
+    color: gray;
+    border-color: gray;
+}
+
+main .features input#id_password1:focus, input#id_password2:focus  {
+    background-color: #1c1c1c;
+    color: #fff;
+    border-color: white;
+}
+
+main .features input#id_password1:hover, input#id_password2:hover{
+    border-color: white;
+}
+
+main .features input#id_password1::-webkit-input-placeholder, input#id_password2::-webkit-input-placeholder{
+    color: gray;
+}
+
+/* sign up */
+main .features input#id_email, input#id_username{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    background-color: #1c1c1c;
+    color: gray;
+    border-color: gray;
+}
+
+main .features input#id_email:focus, input#id_username:focus  {
+    background-color: #1c1c1c;
+    color: #fff;
+    border-color: white;
+}
+
+main .features input#id_email:hover, input#id_username:hover{
+    border-color: white;
+}
+
+main .features input#id_email::-webkit-input-placeholder, input#id_username::-webkit-input-placeholder{
+    color: gray;
+}
+
+main .features .signup label{
+    position:relative;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+main .features .signup p{
+    color: white;
+    text-align: left;
+    overflow: visible;
+}
+
+main .features .home_title a{
+    color: #A701FF
+}
+
+.info_about{
+    clear: left;
+}
+
+.info_about{
+    width: 100%;
+    height: 685px;
+    background-color: white;
+    color: #1c1c1c;
+    font-weight: bold;
+    border-radius: .25rem;
+    margin-left: 3%;
+}
+
+main .features .made{
+    color: gray;
+    margin-top: 1%;
+    width: 105%;
+    margin-left: 33%;
+}
+
+main .features .about_p {
+    color: #1c1c1c;
+}
+
+.image_about{
+    margin-top: 2%;
+    width: 95%;
+    border-radius: .25rem;
+}
+
+.info_about_p{
+    width: 95%;
+    height: 10%;
+    margin-left: 23px;
+    margin-right: 23px;
+    padding-left: 45px;
+}
+
+.about_p_p{
+    margin-top: 5px;
+    margin-left: 40px;
+    margin-bottom: 5px;
+    margin-right: 40px;
+    text-align: center;
+    font-size: 20px;
+    float: left;
+}
+
+main .features .about_title{
+    width: 105%;
+    font-size: 50px;
+    -webkit-user-select: none;
+}
+
+main .features .cop{
+    margin-top: 1%;
+    margin-left: 33%;
+    width: 105%;
+    color: #fff;
+}
+
+main .features .text_about{
+    color: #1c1c1c;
+    text-align: center;
+    position: relative;
+    margin-left: 12%;
+    margin-top: 4%;
+    max-width: 720px;
+    overflow: visible;
+}
+
+main .features .home_background{
+    z-index: auto;
+    margin-top: -30px;
+    position: fixed;
+    width: 1000px;
+    height: 1000px;
+    background-image: url(/static/polls/img/2ds.png)
+}
+
+main .features h1#home_t{
+    margin-top: 20%;
+    font-size: 100px;
+    margin-left: 0%;
+}
+
+main .features .home_background .home_title_main{
+    max-width: 500px;
+    margin-top: -15px;
     color: #fff;
 }
